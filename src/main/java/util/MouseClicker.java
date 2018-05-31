@@ -13,12 +13,26 @@ public class MouseClicker {
 
 
     public void clickLeftOnPixel(int x, int y) throws AWTException, InterruptedException {
-        Robot robot = new Robot();
-        robot.mouseMove(x, y);
-        robot.mousePress(InputEvent.BUTTON1_MASK);
-        sleeper.sleep(200);
-        robot.mouseRelease(InputEvent.BUTTON1_MASK);
+        clickOnPixel(x,y, InputEvent.BUTTON1_MASK);
     }
+
+
+
+    public void clickOnPixel(int x, int y, int button) {
+      try {
+          Robot robot = new Robot();
+          robot.mouseMove(x, y);
+          robot.mousePress(button);
+          sleeper.sleep(200);
+          robot.mouseRelease(button);
+      } catch (AWTException e) {
+          e.printStackTrace();
+      }
+    }
+
+
+
+
 
     public void clickLeftOnPixelWithDeviation(int x, int y) throws AWTException, InterruptedException {
         int deviationX =  random.nextInt(20)-10;

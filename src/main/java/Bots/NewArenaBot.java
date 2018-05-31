@@ -53,7 +53,7 @@ public class NewArenaBot {
 
 
     public static void main(String[] args) throws Exception{
-        ArenaBot arenaBot = new ArenaBot();
+        NewArenaBot arenaBot = new NewArenaBot();
         arenaBot.runBot();
     }
 
