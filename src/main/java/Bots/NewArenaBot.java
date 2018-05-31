@@ -44,14 +44,6 @@ public class NewArenaBot {
     private final int DELTA_MAX_START_BUTTON = 30;
 
 
-    private final PixelColorFetcher fetcher = new PixelColorFetcher();
-    private final MouseClicker mouseClicker = new MouseClicker();
-    private final PixelComparer comparer = new PixelComparer();
-    private final Sleeper sleeper = new Sleeper();
-
-
-
-
     public static void main(String[] args) throws Exception{
         NewArenaBot arenaBot = new NewArenaBot();
         arenaBot.runBot();

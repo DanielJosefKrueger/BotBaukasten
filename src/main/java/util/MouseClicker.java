@@ -16,6 +16,17 @@ public class MouseClicker {
         clickOnPixel(x,y, InputEvent.BUTTON1_MASK);
     }
 
+    public void clickRightOnPixel(int x, int y) throws AWTException, InterruptedException {
+        clickOnPixel(x,y, InputEvent.BUTTON2_MASK);
+    }
+
+
+    public void clickMiddleOnPixel(int x, int y) throws AWTException, InterruptedException {
+        clickOnPixel(x,y, InputEvent.BUTTON3_MASK);
+    }
+
+
+
 
 
     public void clickOnPixel(int x, int y, int button) {

@@ -12,8 +12,6 @@ public class LeftClickAction implements Action{
     private final int y;
 
     public LeftClickAction(int x, int y){
-
-
         this.x = x;
         this.y = y;
     }
