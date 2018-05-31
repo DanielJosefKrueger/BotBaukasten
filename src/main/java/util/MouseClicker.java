@@ -1,4 +1,6 @@
-package moving;
+package util;
+
+import util.Sleeper;
 
 import java.awt.*;
 import java.awt.event.InputEvent;

@@ -1,13 +1,8 @@
-import moving.Sleeper;
+import util.Sleeper;
 
 import java.awt.*;
 import java.awt.event.InputEvent;
-import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
-import java.awt.AWTEvent;
-import java.awt.MouseInfo;
-import java.awt.Toolkit;
-import java.awt.event.AWTEventListener;
 
 
 public class Clicker {

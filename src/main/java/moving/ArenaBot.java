@@ -1,10 +1,11 @@
 package moving;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
+import util.MouseClicker;
+import util.PixelColorFetcher;
+import util.PixelComparer;
+import util.Sleeper;
 
-import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
 
 public class ArenaBot {
 

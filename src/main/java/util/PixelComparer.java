@@ -1,4 +1,4 @@
-package moving;
+package util;
 
 import java.awt.*;
 
