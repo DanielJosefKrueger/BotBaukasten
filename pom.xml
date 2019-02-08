@@ -7,6 +7,23 @@
     <groupId>dark-tech</groupId>
     <artifactId>mousebot</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-core</artifactId>
+            <version>1.19.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.tika/tika-server -->
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-server</artifactId>
+            <version>1.16</version>
+        </dependency>
+    </dependencies>
+
+
     <build>
         <plugins>
             <plugin>
