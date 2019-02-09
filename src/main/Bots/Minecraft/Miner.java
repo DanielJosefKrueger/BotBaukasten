@@ -10,7 +10,7 @@ import java.awt.event.KeyEvent;
 public class Miner {
     private KeyPresser keyPresser;
     private int numberPickAxt=0;
-    private static final int MINUTES_PICKAXT = 30;
+    private static final int MINUTES_PICKAXT = 1;
     private Robot robot = new Robot();
 
 
@@ -38,7 +38,11 @@ public class Miner {
 
 
     public  void nextPickAxt() throws InterruptedException {
-        keyPresser.pressButton(KeyEvent.VK_0 + numberPickAxt);
+        if(numberPickAxt > 9){
+            System.out.println("Finished");
+            System.exit(0);
+        }
+        keyPresser.pressButton(KeyEvent.VK_1 + numberPickAxt);
         numberPickAxt++;
     }
 
