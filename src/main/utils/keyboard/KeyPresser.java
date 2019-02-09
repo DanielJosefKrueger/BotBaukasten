@@ -24,7 +24,11 @@ public class KeyPresser {
         }
     }
 
-
+    public void pressButton(int keyEvent) throws InterruptedException {
+        bot.keyPress(keyEvent);
+        TimeUnit.MILLISECONDS.sleep(50);
+        bot.keyRelease(keyEvent);
+    }
 
 
 
